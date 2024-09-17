@@ -69,7 +69,7 @@ function App() {
   }, [cart]);
 
   return (
-    <Router>
+    <Router basename={process.env.PUBLIC_URL}>
       <div className='App'>
         <Nav logo={LibraryLogo} numberOfItems={numberOfItems()} />
         <Routes>
